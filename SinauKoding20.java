@@ -11,8 +11,8 @@ public class SinauKoding20 {
             if(x%3==0){
                 System.out.println("Angka "+x+" habis dibagi 3");
             }
-            else{
-                System.out.println("Angka "+x+" tidak habis dibagi 3");
+            if(x%5==0){
+                System.out.println("Angka "+x+" habis dibagi 3");
             }
             x++;
         }
