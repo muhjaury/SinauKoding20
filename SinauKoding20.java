@@ -12,7 +12,7 @@ public class SinauKoding20 {
                 System.out.println("Angka "+x+" habis dibagi 3");
             }
             if(x%5==0){
-                System.out.println("Angka "+x+" habis dibagi 3");
+                System.out.println("Angka "+x+" habis dibagi 5");
             }
             x++;
         }
