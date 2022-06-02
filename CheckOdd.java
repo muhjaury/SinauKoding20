@@ -12,7 +12,6 @@ public class CheckOdd {
                     odd+=1;
                 }
             }
-
             if(odd==2){
                 System.out.println(awal+" bilangan prima");
             }
