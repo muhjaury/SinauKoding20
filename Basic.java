@@ -2,10 +2,10 @@ package com;
 
 import java.util.Scanner;
 
-public class SinauKoding20 {
+public class Basic {
     public static void main(String[] args) {
 //        Scanner scan = new Scanner(System.in);
-//        int Angka = scan.nextInt();
+//        int x = scan.nextInt();
         int x=1;
         while(x<51){
             if(x%3==0 && x%5==0){
