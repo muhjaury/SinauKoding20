@@ -125,10 +125,10 @@ class selectObject {
                 System.out.println("------------------------------------------------");
                 switch (selectPerhitungan) {
                     case 1:
-                        System.out.println(persegi.keliling());
+                        System.out.println(persegi.keliling() + " cm");
                         break;
                     case 2:
-                        System.out.println(persegi.luas());
+                        System.out.println(persegi.luas() + " cm^2");
                         break;
                     default:
                         System.out.println("Invalid Input");
@@ -145,10 +145,10 @@ class selectObject {
                 System.out.println("------------------------------------------------");
                 switch (selectPerhitungan) {
                     case 1:
-                        System.out.println(persegiPanjang.keliling());
+                        System.out.println(persegiPanjang.keliling() + " cm");
                         break;
                     case 2:
-                        System.out.println(persegiPanjang.luas());
+                        System.out.println(persegiPanjang.luas() + " cm^2");
                         break;
                     default:
                         System.out.println("Invalid Input");
@@ -165,10 +165,10 @@ class selectObject {
                 System.out.println("------------------------------------------------");
                 switch (selectPerhitungan) {
                     case 1:
-                        System.out.println(segitiga.keliling());
+                        System.out.println(segitiga.keliling() + " cm");
                         break;
                     case 2:
-                        System.out.println(segitiga.luas());
+                        System.out.println(segitiga.luas() + " cm^2");
                         break;
                     default:
                         System.out.println("Invalid Input");
@@ -183,10 +183,10 @@ class selectObject {
                 System.out.println("------------------------------------------------");
                 switch (selectPerhitungan) {
                     case 1:
-                        System.out.println(lingkaran.keliling());
+                        System.out.println(lingkaran.keliling() + " cm");
                         break;
                     case 2:
-                        System.out.println(lingkaran.luas());
+                        System.out.println(lingkaran.luas() + " cm^2");
                         break;
                     default:
                         System.out.println("Invalid Input");
