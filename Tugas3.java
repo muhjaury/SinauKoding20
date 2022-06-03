@@ -27,7 +27,7 @@ final class BangunDatar {
         System.out.println("Keliling Segitiga : " + keliling + " cm");
     }
 
-    public void LuasSegitiga(int x, int y) {
+    public void LuasSegitiga(double x, double y) {
 
         System.out.println("------------------------------------------------");
         double luas = (x * y) / 2;
