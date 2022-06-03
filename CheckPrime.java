@@ -1,6 +1,6 @@
 package com;
 
-public class CheckOdd {
+public class CheckPrime {
     public static void main(String[] args) {
         int awal = 1;
         int akhir = 50;
