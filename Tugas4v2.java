@@ -66,16 +66,22 @@ class PersegiPanjang implements Formula {
 }
 
 class Segitiga implements Formula {
-    private float alas, tinggi;
+    private float alas, tinggi, sisi1, sisi2, sisi3;
 
-    public Segitiga(float alas, float tinggi) {
+    public void KelilingSegitiga(float sisi1, float sisi2, float sisi3) {
+        this.sisi1 = sisi1;
+        this.sisi2 = sisi2;
+        this.sisi3 = sisi3;
+    }
+
+    public void LuasSegitiga(float alas, float tinggi) {
         this.alas = alas;
         this.tinggi = tinggi;
     }
 
     @Override
     public float keliling() {
-        return (float) (alas + tinggi + Math.sqrt(Math.pow(alas, 2) + Math.pow(tinggi, 2)));
+        return sisi1 + sisi2 + sisi3;
     }
 
     @Override
@@ -157,17 +163,26 @@ class selectObject {
                 break;
             case 3:
                 System.out.println("------------------------------------------------");
-                System.out.print("Masukkan alas (cm) : ");
-                float alas = scan.nextFloat();
-                System.out.print("Masukkan tinggi (cm) : ");
-                float tinggi = scan.nextFloat();
-                Segitiga segitiga = new Segitiga(alas, tinggi);
-                System.out.println("------------------------------------------------");
+                Segitiga segitiga = new Segitiga();
                 switch (selectPerhitungan) {
                     case 1:
+                        System.out.print("Masukkan panjang sisi 1 (cm) : ");
+                        float sisi1 = scan.nextFloat();
+                        System.out.print("Masukkan panjang sisi 2 (cm) : ");
+                        float sisi2 = scan.nextFloat();
+                        System.out.print("Masukkan panjang sisi 3 (cm) : ");
+                        float sisi3 = scan.nextFloat();
+                        segitiga.KelilingSegitiga(sisi1, sisi2, sisi3);
+                        System.out.println("------------------------------------------------");
                         System.out.println(segitiga.keliling() + " cm");
                         break;
                     case 2:
+                        System.out.print("Masukkan alas (cm) : ");
+                        float alas = scan.nextFloat();
+                        System.out.print("Masukkan tinggi (cm) : ");
+                        float tinggi = scan.nextFloat();
+                        segitiga.LuasSegitiga(alas, tinggi);
+                        System.out.println("------------------------------------------------");
                         System.out.println(segitiga.luas() + " cm^2");
                         break;
                     default:
